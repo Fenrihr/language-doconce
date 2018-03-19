@@ -913,6 +913,48 @@
       ]
     }
   {
+    'begin': '\\$\\$'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.doconce'
+    'end': '\\$\\$'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.doconce'
+    'name': 'string.other.math.block.doconce'
+    'patterns': [
+      {
+        'include': 'text.tex#math'
+      }
+      {
+        'include': 'text.tex'
+      }
+    ]
+  }
+  {
+    'begin': '\\$'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.doconce'
+    'end': '\\$'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.doconce'
+    'name': 'string.other.math.doconce'
+    'patterns': [
+      {
+        'match': '\\\\\\$'
+        'name': 'constant.character.escape.doconce'
+      }
+      {
+        'include': 'text.tex#math'
+      }
+      {
+        'include': 'text.tex'
+      }
+    ]
+  }
+  {
     'match': '[^\\"]?(\\")([^\\"]+)(\\")\\s*:\\s*(\\")([^\\"]+)(\\")[^\\"]?'
     'name': 'link'
     'captures':
