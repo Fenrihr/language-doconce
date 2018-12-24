@@ -551,6 +551,40 @@
     ]
   }
   {
+    'begin': '^(\!bc)\\s*c(cod|pro)?\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'entity.name.tag.block.any.doconce'
+    'end': '^\!ec.*?$'
+    'endCaptures':
+      '0':
+        'name': 'entity.name.tag.block.any.doconce'
+    'name': 'markup.code.c.doconce'
+    'contentName': 'source.embedded.c'
+    'patterns': [
+      {
+        'include': 'source.c'
+      }
+    ]
+  }
+  {
+    'begin': '^(\!bc)\\s*cpp(cod|pro)?\\s*$'
+    'beginCaptures':
+      '0':
+        'name': 'entity.name.tag.block.any.doconce'
+    'end': '^\!ec.*?$'
+    'endCaptures':
+      '0':
+        'name': 'entity.name.tag.block.any.doconce'
+    'name': 'markup.code.cpp.doconce'
+    'contentName': 'source.embedded.cpp'
+    'patterns': [
+      {
+        'include': 'source.cpp'
+      }
+    ]
+  }
+  {
     'begin': '^(\!bt).*$'
     'beginCaptures':
       '0':
