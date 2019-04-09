@@ -1,4 +1,4 @@
-'.source.gfm':
+'.source.doconce':
   'bold text':
     'prefix': 'b'
     'body': '**$1**$0'
