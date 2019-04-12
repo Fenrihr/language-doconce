@@ -1,21 +1,63 @@
-'.source.gfm':
+'.source.doconce':
+# INLINE FORMATTING
   'bold text':
     'prefix': 'b'
-    'body': '**$1**$0'
-  'embedded image':
-    'prefix': 'img'
-    'body': '![$1]($2)$0'
+    'body': '_$1_$0'
   'italic text':
     'prefix': 'i'
     'body': '*$1*$0'
+
+# Coding Style
+  'Inline Code':
+    'prefix': 'icode'
+    'body': '`$1`$0'
+  'Block Code':
+    'prefix': 'bcode'
+    'body': '!bc ${1:syntax}cod\n$2\n!ec\n'
+
+# SECTION TYPES
+  'chapter':
+    'prefix': 'chapter'
+    'body': '========= $1 =========\n$0'
+  'section':
+    'prefix': 'section'
+    'body': '======= $1 =======\n$0'
+  'subsection':
+    'prefix': 'subsection'
+    'body': '===== $1 =====\n$0'
+  'subsubsection':
+    'prefix': 'sss'
+    'body': '=== $1 ===\n$0'
+  'paragraph':
+    'prefix': 'paragraph'
+    'body': '__$1.__\n$0'
+  'appendix':
+    'prefix': 'appendix'
+    'body': '======= Appendix: $1 =======\n$0'
+  'subappendix':
+    'prefix': 'subappendix'
+    'body': '===== Appendix: $1 =====\n$0'
+
+# CITATION
+  'cite':
+    'prefix': 'cite'
+    'body': 'cite{$1}'
+
+# FIGURE and MOVIE
+  'figure':
+    'prefix': 'figure'
+    'body': 'FIGURE: [$1, width=$2 frac=$3] ${4:caption}'
+  'movie':
+    'prefix': 'movie'
+    'body': 'MOVIE: [$1, width=$2] ${5:caption}'
+
+# NO DOCONCE
+# TODO: change or update because this isn't doconce
   'link':
     'prefix': 'l'
     'body': '[$1]($2)$0'
-  'code':
-    'prefix': 'code'
-    'body': '```$1\n$2\n```$0'
   'todo':
-    'prefix': 't'
+    'prefix': 'todo'
     'body': '- [ ] $1'
   'table':
     'prefix': 'table'
