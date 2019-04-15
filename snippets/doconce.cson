@@ -51,9 +51,16 @@
     'prefix': 'movie'
     'body': 'MOVIE: [$1, width=$2] ${5:caption}'
 
+# INDLUDE / IMPORT
   'include':
     'prefix': 'include'
     'body': '# #include "$1"\n$0'
+
+# ADMONITION
+  'warning':
+    'prefix': 'warning'
+    'body': '!bwarning\n${1:warning}\n!ewarning\n$0'
+
 
 # NO DOCONCE
 # TODO: change or update because this isn't doconce
