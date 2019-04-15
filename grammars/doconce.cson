@@ -13,6 +13,12 @@
     'name': 'meta.definition.doconce'
   }
   {
+    'match': '^(FIGURE:).*$'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.keyword.doconce'
+  }
+  {
     'begin': '^\\s*(#)\\s*(#)\\s*(include|import)\\b\\s+'
     'captures':
       '1':
