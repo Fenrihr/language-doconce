@@ -51,6 +51,10 @@
     'prefix': 'movie'
     'body': 'MOVIE: [$1, width=$2] ${5:caption}'
 
+  'include':
+    'prefix': 'include'
+    'body': '# #include "$1"\n$0'
+
 # NO DOCONCE
 # TODO: change or update because this isn't doconce
   'link':
