@@ -41,7 +41,7 @@
 # CITATION
   'cite':
     'prefix': 'cite'
-    'body': 'cite{$1}'
+    'body': 'cite{$1}$0'
 
 # FIGURE and MOVIE
   'figure':
@@ -51,16 +51,19 @@
     'prefix': 'movie'
     'body': 'MOVIE: [$1, width=$2] ${5:caption}'
 
-# INDLUDE / IMPORT
-  'include':
+# COMMANDS
+  'Include files':
     'prefix': 'include'
     'body': '# #include "$1"\n$0'
+
+  'Inline Comments':
+    'prefix': 'icomment'
+    'body': '[${1:name}: ${2:comment}]'
 
 # ADMONITION
   'warning':
     'prefix': 'warning'
     'body': '!bwarning\n${1:warning}\n!ewarning\n$0'
-
 
 # NO DOCONCE
 # TODO: change or update because this isn't doconce
