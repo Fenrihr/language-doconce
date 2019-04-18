@@ -1191,13 +1191,13 @@
     'match': '^#.*$'
     'name': 'comment.block'
   }
-  {
-    'match': '\\[([A-Za-z0-9\\s\\+\\-]+):\\s*(.*)\\]'
-    'name': 'markup.other.inlinecomment'
-    'captures':
-      '1':
-        'name': 'markup.bold.doconce'
-      '2':
-        'name': 'entity.doconce'
-  }
+    {
+      'match': '\\[([A-Za-z0-9\\+\\-]+):\\s([^\\]]*)\\]'
+      'name': 'markup.other.inlinecomment'
+      'captures':
+        '1':
+          'name': 'punctuation.definition.keyword.doconce'
+        '2':
+          'name': 'entity.doconce'
+    }
 ]
