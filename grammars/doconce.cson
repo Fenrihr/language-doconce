@@ -6,7 +6,7 @@
 ]
 'patterns': [
   {
-    'match': '^(TITLE:|AUTHOR:|DATE:|TOC:|BIBFILE:).*$'
+    'match': '^(TITLE:|AUTHOR:|DATE:|TOC:|BIBFILE:|FIGURE:|MOVIE:).*$'
     'captures':
       '1':
         'name': 'punctuation.definition.keyword.doconce'
@@ -88,6 +88,25 @@
 
   {
     'begin': '(ref)(\\{)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.definition.keyword.doconce'
+      '2':
+        'name': 'punctuation.definition.arguments.begin.doconce'
+    'end': '(\\})'
+    'endCaptures':
+      '1':
+        'name': 'punctuation.definition.arguments.end.doconce'
+    'name': 'meta.definition.doconce'
+    'patterns': [
+      {
+        'match': '[a-zA-Z0-9\\.,:/*!^_-]'
+        'name': 'variable.parameter.definition.doconce'
+      }
+    ]
+  }
+  {
+    'begin': '(cite)(\\{)'
     'beginCaptures':
       '1':
         'name': 'punctuation.definition.keyword.doconce'
@@ -1192,13 +1211,13 @@
     'match': '^#.*$'
     'name': 'comment.block'
   }
-  {
-    'match': '\\[([A-Za-z0-9\\s\\+\\-]+):\\s*(.*)\\]'
-    'name': 'markup.other.inlinecomment'
-    'captures':
-      '1':
-        'name': 'markup.bold.doconce'
-      '2':
-        'name': 'entity.doconce'
-  }
+    {
+      'match': '\\[([A-Za-z0-9\\+\\-]+):\\s([^\\]]*)\\]'
+      'name': 'markup.other.inlinecomment'
+      'captures':
+        '1':
+          'name': 'punctuation.definition.keyword.doconce'
+        '2':
+          'name': 'entity.doconce'
+    }
 ]

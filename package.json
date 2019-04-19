@@ -1,13 +1,34 @@
 {
-  "name": "language-doconce",
-  "main": "./lib/doconce",
-  "version": "0.3.8",
-  "description": "Syntax highlighting and snippets for DocOnce.",
-  "repository": "https://github.com/ComputationalPhysics/language-doconce",
-  "license": "MIT",
-  "engines": {
-    "atom": "*"
+  "_from": "https://www.atom.io/api/packages/language-doconce/versions/0.3.8/tarball",
+  "_id": "language-doconce@0.3.8",
+  "_inBundle": false,
+  "_integrity": "sha512-H7uivgZ0B8aPl3KGJmmi6YW5QxZ3QZv68nRrHfFJOdELke2ex1+qTsugDTK4g6jaNVjk6zUlyTXA46UkZlzJeQ==",
+  "_location": "/language-doconce",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-doconce/versions/0.3.8/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-doconce/versions/0.3.8/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-doconce/versions/0.3.8/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-doconce/versions/0.3.8/tarball"
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-doconce/versions/0.3.8/tarball",
+  "_shasum": "0389cfbc53bd8bc17027b3229a4673951c2c74d8",
+  "_spec": "https://www.atom.io/api/packages/language-doconce/versions/0.3.8/tarball",
+  "_where": "/tmp/apm-install-dir-11939-27816-19lfb4b.2fnp",
+  "bugs": {
+    "url": "https://github.com/ComputationalPhysics/language-doconce/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "underscore-plus": "^1.6.6"
+  },
+  "deprecated": false,
+  "description": "Syntax highlighting and snippets for DocOnce.",
   "devDependencies": {
     "coffee-script": "1.7.0",
     "coffeelint": "^1.10.1",
@@ -15,9 +36,13 @@
     "season": "^5.0.2",
     "underscore-plus": "^1.0.6"
   },
-  "dependencies": {
-    "underscore-plus": "^1.6.6"
+  "engines": {
+    "atom": "*"
   },
+  "homepage": "https://github.com/ComputationalPhysics/language-doconce#readme",
+  "license": "MIT",
+  "main": "./lib/doconce",
+  "name": "language-doconce",
   "package-dependencies": {
     "language-latex": "^0.6.1",
     "hyperclick": "^0.0.35"
@@ -28,5 +53,63 @@
         "0.0.0": "getProvider"
       }
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ComputationalPhysics/language-doconce.git"
+  },
+  "version": "0.3.8",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "underscore",
+        "version": "1.9.1",
+        "path": "node_modules/underscore/underscore.js"
+      },
+      {
+        "name": "underscore-plus",
+        "version": "1.7.0",
+        "path": "node_modules/underscore-plus/lib/underscore-plus.js"
+      }
+    ],
+    "extensions": {
+      ".json": [
+        "coffeelint.json",
+        "node_modules/underscore/package.json",
+        "node_modules/underscore-plus/package.json",
+        "package.json"
+      ],
+      ".coffee": [
+        "lib/doconce.coffee",
+        "lib/processor.coffee"
+      ],
+      ".js": [
+        "node_modules/underscore/underscore-min.js",
+        "node_modules/underscore/underscore.js",
+        "node_modules/underscore-plus/lib/underscore-plus.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          "lib",
+          "spec"
+        ],
+        "dependencies": {
+          "underscore-plus": "^1.6.6"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/underscore-plus/lib",
+          "node_modules/underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "^1.9.1"
+        }
+      }
+    ]
   }
 }
