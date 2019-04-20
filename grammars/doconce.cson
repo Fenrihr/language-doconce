@@ -1175,4 +1175,23 @@
       '2':
         'name': 'entity.doconce'
   }
+    {
+    'begin': '(cite)(\\{)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.definition.keyword.doconce'
+      '2':
+        'name': 'punctuation.definition.arguments.begin.doconce'
+    'end': '(\\})'
+    'endCaptures':
+      '1':
+        'name': 'punctuation.definition.arguments.end.doconce'
+    'name': 'meta.definition.doconce'
+    'patterns': [
+      {
+        'match': '[a-zA-Z0-9\\.,:/*!^_-]'
+        'name': 'variable.parameter.definition.doconce'
+      }
+    ]
+  }
 ]
