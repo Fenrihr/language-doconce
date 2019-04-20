@@ -1215,10 +1215,10 @@
     'match': '\\[([A-Za-z0-9\\+\\-]+):\\s([^\\]]*)\\]'
     'name': 'markup.other.inlinecomment'
     'captures':
-    '1':
-      'name': 'punctuation.definition.keyword.doconce'
-    '2':
-      'name': 'variable.parameter.definition.doconce'
+      '1':
+        'name': 'punctuation.definition.keyword.doconce'
+      '2':
+        'name': 'variable.parameter.definition.doconce'
   }
   {
     'match': '^(FIGURE:).*$'
@@ -1246,20 +1246,27 @@
     ]
   }
   {
-    'begin': '(color)(\\{)[a-zA-Z]*(\\})(\\{)'
+    'begin': '(color)(\\{)([a-zA-Z]*)(\\})(\\{)'
     'captures':
       '1':
         'name': 'punctuation.definition.keyword.doconce'
       '2':
         'name': 'punctuation.definition.arguments.begin.doconce'
       '3':
-        'name': 'punctuation.definition.arguments.end.doconce'
+        'name': 'variable.parameter.definition.doconce'
       '4':
+        'name': 'punctuation.definition.arguments.end.doconce'
+      '5':
         'name': 'punctuation.definition.string.begin.doconce'
     'end': '(\\})'
     'name': 'meta.definition.color.doconce'
     'endCaptures':
       '1':
         'name': 'punctuation.definition.string.end.doconce'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
   }
 ]
