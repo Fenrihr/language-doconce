@@ -1194,4 +1194,21 @@
       }
     ]
   }
+    {
+    'begin': '(color)(\\{)[a-zA-Z]*(\\})(\\{)'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.keyword.doconce'
+      '2':
+        'name': 'punctuation.definition.arguments.begin.doconce'
+      '3':
+        'name': 'punctuation.definition.arguments.end.doconce'
+      '4':
+        'name': 'punctuation.definition.string.begin.doconce'
+    'end': '(\\})'
+    'endCaptures':
+      '1':
+        'name': 'punctuation.definition.string.end.doconce'
+    'name': 'meta.definition.color.doconce'
+  }
 ]
