@@ -1175,7 +1175,13 @@
       '2':
         'name': 'entity.doconce'
   }
-    {
+  {
+    'match': '^(FIGURE:).*$'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.keyword.doconce'
+  }
+  {
     'begin': '(cite)(\\{)'
     'beginCaptures':
       '1':
@@ -1194,7 +1200,7 @@
       }
     ]
   }
-    {
+  {
     'begin': '(color)(\\{)[a-zA-Z]*(\\})(\\{)'
     'captures':
       '1':
