@@ -1167,13 +1167,13 @@
     'name': 'comment.block'
   }
   {
-    'match': '\\[([A-Za-z0-9\\s\\+\\-]+):\\s*(.*)\\]'
+    'match': '\\[([A-Za-z0-9\\+\\-]+):\\s([^\\]]*)\\]'
     'name': 'markup.other.inlinecomment'
     'captures':
-      '1':
-        'name': 'markup.bold.doconce'
-      '2':
-        'name': 'entity.doconce'
+    '1':
+      'name': 'punctuation.definition.keyword.doconce'
+    '2':
+      'name': 'variable.parameter.definition.doconce'
   }
   {
     'match': '^(FIGURE:).*$'
